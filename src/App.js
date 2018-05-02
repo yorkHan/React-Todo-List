@@ -9,7 +9,7 @@ class App extends Component {
   constructor(props){
     super(props)
     this.state={
-      newTodo:'test',
+      newTodo:'',
       todoList:[
         {id:1,title:'第一个代办'},
         {id:2,title:'第二个代办'},
@@ -20,7 +20,7 @@ class App extends Component {
     let todos=this.state.todoList.map((item,index)=>{
       return (
         <li>
-          <TodoItem todo={item} />
+          <TodoItem key={index} todo={item} />
         </li>
       )
     })
