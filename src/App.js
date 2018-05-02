@@ -52,12 +52,14 @@ class App extends Component {
     })
   }
   addTodo(event){
+    if(event.target.value){
     this.state.todoList.push({
       id:idMaker(),
       title:event.target.value,
       status:null,
       deleted:false,
     })
+  }
     this.setState({
       newTodo:'',
       todoList:this.state.todoList
