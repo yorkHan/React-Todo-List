@@ -1,4 +1,5 @@
 {
+  "homepage": "https://yorkhan.github.io/React-Todo-List/",
   "name": "webpack-demo",
   "version": "0.1.0",
   "private": true,
@@ -14,3 +15,4 @@
     "eject": "react-scripts eject"
   }
 }
+
