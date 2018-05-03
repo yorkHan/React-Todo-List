@@ -34,6 +34,7 @@ class App extends Component {
       <ol className="todoList">
         {todos}
       </ol>
+      <UserDialog />
       </div>
     );
   }
